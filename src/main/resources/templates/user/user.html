@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+
+<h2>用户信息</h2>
+<div>
+    <a th:href="@{'/userList'}">返回</a>
+    <ul>
+
+            <p>ID:<span th:text="${user.id}"></span></p>
+            <p>名字:<span th:text="${user.loginid}"></p>
+            <p>年龄:<span th:text="${user.name}"></span></p>
+            <p>地址:<span th:text="${user.departmentid }"></span></p>
+
+
+    </ul>
+</div>
+
+</body>
+</html>
